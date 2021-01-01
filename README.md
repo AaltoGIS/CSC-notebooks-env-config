@@ -7,7 +7,8 @@ tutorials.
 Link to this repository ([see docs](http://cscfi.github.io/pebbles/group_owners_guide.html)) should be added in https://notebooks.csc.fi as an environment variable
 to the Blueprint settings (into `environment variables for docker` -box), e.g.
 
- - `AUTODOWNLOAD_URL=https://github.com/AaltoGIS/CSC-notebooks-environment-configuration AUTODOWNLOAD_EXEC=sustainability-gis-installations.sh`
+ - `AUTODOWNLOAD_URL=https://github.com/AaltoGIS/CSC-notebooks-environment-configuration` 
+ - `AUTODOWNLOAD_EXEC=sustainability-gis-installations.sh`
 
 ## What to do?
 
