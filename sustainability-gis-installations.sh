@@ -31,6 +31,17 @@ else
     git clone --single-branch --branch $BRANCH $SOURCE_REPO
 fi
 
+# Create data directory if it doesn't exist
+DATA_DIR=='/home/jovyan/work/data'
+if [ ! -d "$DATA_DIR" ]; then
+    mkdir $DATA_DIR
+fi
+
+# If needed, add data download/extract commands here
+# cd "$DATA_DIR"
+# FILESRC="<MYLINK_TO_DATA>"
+# wget $FILESRC
+
 # Create exercises directory if it doesn't exist
 EXERCISE_DIR='/home/jovyan/work/exercises'
 if [ ! -d "$EXERCISE_DIR" ]; then
