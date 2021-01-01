@@ -4,11 +4,10 @@ Configuring the JupyterLab Environment for CSC Notebooks. This repository will b
 configure which repository is used to fetch the student versions of the lesson
 tutorials.  
 
-Link to this repository ([see docs](http://cscfi.github.io/pebbles/group_owners_guide.html)) should be added in https://notebooks.csc.fi as an environment variable
-to the Blueprint settings (into `environment variables for docker` -box), e.g.
+Link to the configuration file of your course in this repository ([see docs](http://cscfi.github.io/pebbles/group_owners_guide.html)) should be added in https://notebooks.csc.fi as an environment variable
+to the Blueprint settings (into `environment variables for docker` -box (third from above in the panel)), e.g.
 
- - `AUTODOWNLOAD_URL=https://github.com/AaltoGIS/CSC-notebooks-environment-configuration` 
- - `AUTODOWNLOAD_EXEC=sustainability-gis-installations.sh`
+ - `AUTODOWNLOAD_URL=https://raw.githubusercontent.com/AaltoGIS/CSC-notebooks-env-config/master/sustainability-gis-installations.sh AUTODOWNLOAD_EXEC=sustainability-gis-installations.sh`
 
 ## What to do?
 
