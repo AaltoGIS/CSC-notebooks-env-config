@@ -38,4 +38,4 @@ if [ ! -d "$EXERCISE_DIR" ]; then
 fi
 
 # Go to containing folder
-cd $NOTEBOOK_DIR
+cd "$NOTEBOOK_DIR"
