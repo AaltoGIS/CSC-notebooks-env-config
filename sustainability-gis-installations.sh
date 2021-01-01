@@ -32,7 +32,7 @@ else
 fi
 
 # Create data directory if it doesn't exist
-DATA_DIR=='/home/jovyan/work/data'
+DATA_DIR='/home/jovyan/work/data'
 if [ ! -d "$DATA_DIR" ]; then
     mkdir $DATA_DIR
 fi
