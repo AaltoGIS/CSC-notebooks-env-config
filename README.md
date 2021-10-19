@@ -11,7 +11,7 @@ to the Blueprint settings (into `environment variables for docker` -box (third f
 
 ## What to do?
 
-Create a shell file for your course based on [this example]( [sustainability-gis-installations.sh](sustainability-gis-installations.sh)) and update following parameters:
+Create a shell file for your course based on [this example]( [sustainability-gis-installations.sh](https://github.com/AaltoGIS/CSC-notebooks-env-config/blob/master/sustainability-gis-installations.sh)) and update following parameters:
 
  - ORGANIZATION
  - NOTEBOOKS_REPO
