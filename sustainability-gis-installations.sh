@@ -9,7 +9,7 @@ NOTEBOOKS_REPO='notebooks'
 # Branch from where the notebooks are fetched from
 # Typically 'master' or 'main'
 # (different years/courses can also be on separate branches of the same repo)
-BRANCH='sustainability-gis-2021'
+BRANCH='sustainability-gis-2022'
 
 # Folder name that will appear in the CSC instance
 # This is used to avoid conflicts when cloning if a student has participated to many courses using similar CSC environment
