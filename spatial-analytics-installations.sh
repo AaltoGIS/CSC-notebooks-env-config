@@ -11,9 +11,9 @@ NOTEBOOKS_REPO='notebooks'
 # (different years/courses can also be on separate branches of the same repo)
 BRANCH='spatial-analytics-2021'
 
-# Prefix for the folder name that will appear in the CSC instance
+# Folder name that will appear in the CSC instance
 # This is used to avoid conflicts when cloning if a student has participated to many courses using similar CSC environment
-PREFIX='spatial-analytics'
+COURSE_FOLDER='spatial-analytics'
 
 cd /home/jovyan/work
 # git reflog requires a name and email if user is not in passwd
@@ -25,7 +25,7 @@ export GIT_COMMITTER_EMAIL=anon@localhost
 SOURCE_REPO="https://github.com/$ORGANIZATION/$NOTEBOOKS_REPO.git"
 
 # Grab notebooks repository
-NB_FOLDER_NAME="$PREFIX-notebooks"
+NB_FOLDER_NAME="$COURSE_FOLDER/notebooks"
 NOTEBOOK_DIR="/home/jovyan/work/$NB_FOLDER_NAME"
 
 if [ -d "$NOTEBOOK_DIR" ]; then
@@ -38,7 +38,7 @@ else
 fi
 
 # Create data directory if it doesn't exist
-DATA_FOLDER_NAME="$PREFIX-data"
+DATA_FOLDER_NAME="$COURSE_FOLDER/data"
 DATA_DIR="/home/jovyan/work/$DATA_FOLDER_NAME"
 
 if [ ! -d "$DATA_DIR" ]; then
@@ -51,7 +51,7 @@ fi
 # wget $FILESRC
 
 # Create exercises directory if it doesn't exist
-EX_FOLDER_NAME="$PREFIX-exercises"
+EX_FOLDER_NAME="$COURSE_FOLDER/exercises"
 EXERCISE_DIR="/home/jovyan/work/$EX_FOLDER_NAME"
 
 if [ ! -d "$EXERCISE_DIR" ]; then
